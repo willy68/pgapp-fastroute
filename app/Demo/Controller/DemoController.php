@@ -2,10 +2,8 @@
 
 namespace App\Demo\Controller;
 
-use App\Auth\Models\User;
 use Framework\Router\Annotation\Route;
 use Framework\Renderer\RendererInterface;
-use Psr\Http\Message\ServerRequestInterface;
 
 class DemoController
 {
@@ -20,21 +18,12 @@ class DemoController
      * 
      * @Route("/", name="demo.index", methods={"GET"})
      *
-     * @param ServerRequestInterface $request
      * @param RendererInterface $renderer
-     * @param \PDO $pdo
      * @return string
      */
     public function index(
-        ServerRequestInterface $request,
-        RendererInterface $renderer,
-        \PDO $pdo
+        RendererInterface $renderer
     ): string {
-        /** @var \App\Auth\Models\User $user */
-        $user = User::find_by_username(['username' => 'admin']);
-        $user_array = $user->to_array();
-        $mysql_ver = $pdo->getAttribute(\PDO::ATTR_SERVER_VERSION);
-        $params = array_merge($request->getServerParams(), $user_array, [$mysql_ver], [$query->__toString()]);
-        return $renderer->render('@demo/index', compact('params'));
+        return $renderer->render('@demo/index');
     }
 }
