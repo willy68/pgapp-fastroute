@@ -13,7 +13,7 @@ yarn
 ## Test composer create-project
 **ligne de commande**  
 ```
-composer create-project --repository-url=../pgframework-app/packages.json --remove-vcs willy68/pgapp-fastroute
+composer create-project --repository-url=../{your_dir}/packages.json --remove-vcs willy68/pgapp-fastroute
 ```
 
 **Fichier packages.json**  
