@@ -51,3 +51,4 @@ tmp
 node_modules
 public/assets/js/*
 !public/assets/js/.gitkeep
+package.lock
