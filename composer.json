@@ -21,7 +21,7 @@
     "require": {
         "symfony/dotenv": "^5.0",
         "http-interop/response-sender": "^1.0",
-        "willy68/pgframework": "dev-master",
+        "willy68/pgframework-fastroute": "dev-master",
         "ext-json": "*",
         "ext-pdo": "*"
     },
