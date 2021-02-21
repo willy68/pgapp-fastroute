@@ -1,25 +1,53 @@
-# CakePHP 3
+.project
+.buildpath
+.settings
+*.log
+*.db
+*.swp
+vendor/*
+composer.lock
+phpunit.xml
 
-/vendor/*
-/config/app.php
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.editorconfig
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# IDE - VSCode
+.vscode/*
 
-/logs/*
-!/logs/empty
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-# CakePHP 2
+# System Files
+.DS_Store
+Thumbs.db
 
-/app/tmp/*
-/app/Config/core.php
-/app/Config/database.php
-/vendors/*
+#
+bin/*
+!bin/.gitkeep
+.env.local
+/config/database.php
+database.php
+*~
+/generated_models
+/generated_routes
+/generated_controllers
+routes.xml
+tmp
+/.vs/slnx.sqlite
+node_modules
+public/assets/js/*
+!public/assets/js/.gitkeep
