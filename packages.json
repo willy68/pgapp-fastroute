@@ -1,11 +1,11 @@
 {
     "package": {
-        "name": "willy68/pgframework-app",
+        "name": "willy68/pgapp-fastroute",
         "version": "0.0.1",
         "source": {
-          "url": "https://github.com/willy68/pgframework-app.git",
+          "url": "https://github.com/willy68/pgapp-fastroute.git",
           "type": "git",
-          "reference": "master"
+          "reference": "main"
         }
     }
  }
